@@ -1,0 +1,61 @@
+body{
+	background-color: gray;
+}
+
+.topo{
+	margin-top: 69px;
+	text-align: center;
+}
+
+.titulo{
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-top: 60px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.rodape{
+	padding: 2% 0 0 2%;
+}
+
+.texNegrito{
+    color: #000000;
+}
+
+.link{
+
+}
+
+.texto{
+	color: #FFFFFF;
+	margin: 10px 25px 25px;
+}
+
+p{
+	margin-top: 30px; 
+	margin-bottom: 30px;
+}
+
+.barra{
+	background-color: black;
+	padding-top: 4px;
+}
+
+.rodapeCentro{
+    margin-left: 450px;
+    margin-top: -18px;
+    text-align: center;
+    width: 400px;
+}
+
+.rodapeDireita{
+    margin: -18px 0 0 860px;
+    text-align: right;
+    width: 450px;
+}
+
+.rodapeEsquerda{
+	text-align: left;
+	width: 400px;
+}
