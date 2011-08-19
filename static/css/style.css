@@ -1,17 +1,27 @@
 body{
-	background-color: gray;
+	background-color: white;
+}
+
+img{
+	margin-left: -106px; 
+	width: 187px
+}
+
+.tituloNome{
+     font-size: 110px;
+	margin-top: -56px;
 }
 
 .topo{
-	margin-top: 69px;
+	margin-top: 5px;
 	text-align: center;
 }
 
 .titulo{
     margin-bottom: 50px;
     margin-left: 20px;
-    margin-top: 60px;
-    font-size: 50px;
+    margin-top: 15px;
+    font-size: 70px;
     text-align: center;
 }
 
@@ -20,7 +30,7 @@ body{
 }
 
 .texNegrito{
-    color: #000000;
+    color: red;
 }
 
 .link{
@@ -28,7 +38,7 @@ body{
 }
 
 .texto{
-	color: #FFFFFF;
+	color: #000000;
 	margin: 10px 25px 25px;
 }
 
@@ -50,7 +60,7 @@ p{
 }
 
 .rodapeDireita{
-    margin: -18px 0 0 860px;
+    margin: -32px 0 0 860px;
     text-align: right;
     width: 450px;
 }
