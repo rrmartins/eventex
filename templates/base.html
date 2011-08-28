@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>EventeX! - Rodrigo Martins</title>
+		<link rel="stylesheet" href="{{	STATIC_URL }}css/style.css" type="text/css" /> 
+	</head>
+	<body>
+		<div class="topo"><img src="{{STATIC_URL}}img/python_pt-logo.gif"/><br/><div class="tituloNome">!EventeX!</div></div>
+		<div class="login"><a href="admin/">Login</a></div>
+		<div class="barra"></div>  
+			{% block content %}
+	
+			{% endblock content %}
+	<div class="barra"></div>
+		<div class="rodape">
+			<div class="rodapeEsquerda">
+				@2011, <a href="#">EventeX!</a>, some rights reserved.
+			</div>
+			<div class="rodapeCentro">
+
+			</div>
+			<div class="rodapeDireita">
+				<img src="{{ STATIC_URL }}img/logo_python.png"/>
+			</div>
+		</div>
+	</body>
+</html>

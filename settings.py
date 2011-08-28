@@ -23,6 +23,16 @@ DATABASES = {
     }
 }
 
+EMAIL_BACKEND =	'django.core.mail.backends.smtp.EmailBackend'
+#EMAIL_BACKEND =	'django.core.mail.backends.console.EmailBackend'
+#EMAIL_BACKEND =	'django.core.mail.backends.dummy.EmailBackend'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'rodrigo@rrmartins.com'
+EMAIL_HOST_PASSWORD = '09042008Na'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 TIME_ZONE = 'America/Sao_Paulo'
 
 LANGUAGE_CODE = 'pt-BR'
@@ -76,9 +86,11 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+#    'django.contrib.messages',
+#    'django.contrib.staticfiles',
+    'django.contrib.admin',
     'core',
+    'subscription',
 )
 
 LOGGING = {
@@ -98,3 +110,4 @@ LOGGING = {
         },
     }
 }
+
