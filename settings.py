@@ -91,6 +91,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'core',
     'subscription',
+    'south',
 )
 
 LOGGING = {

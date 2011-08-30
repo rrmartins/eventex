@@ -16,7 +16,11 @@ def subscribe(request):
 
 
 def new(request):
-    form = SubscriptionForm()
+    form = SubscriptionForm( initial= {
+        'name': 'Entre o seu nome',
+        'cpf': 'Digite o seu CPF sem pontos',
+        'email': 'Informe o seu email',
+        'phone': 'Qual seu telefone de contato?',})
     context = RequestContext(request, {'form': form})
     return render_to_response('subscription/new.html', context)
 
@@ -26,7 +30,9 @@ def create(request):
     if not form.is_valid():
         context = RequestContext(request, {'form': form})
         return render_to_response('subscription/new.html', context)
-
+    
+   # model = Subscription(form)
+    
     subscription = form.save()
     send_mail(
         subject = u'Inscricao no EventeX',
