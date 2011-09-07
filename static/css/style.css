@@ -6,9 +6,14 @@ body{
 	float: right; margin-top: -25px;
 }
 
-img{
+.img1{
 	margin-left: -106px; 
 	width: 187px
+}
+
+.imagem{
+       margin-left: 10px;
+       width: 80px;
 }
 
 .tituloNome{
