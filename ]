@@ -9,19 +9,9 @@ class TalkInline(admin.TabularInline):
     model = Talk
     extra = 2
 
-class SpeakerInline(admin.TabularInline):
-    model = Speaker
-    extra = 3
-
-class TalkAdmin(admin.ModelAdmin):
-#    inlines = [SpeakerInline, ContactInline, ]
-    prepopulated_fields = {'title': ('description', )}
-
-
 class SpeakerAdmin(admin.ModelAdmin):
     inlines = [ContactInline, TalkInline, ]
     prepopulated_fields = {'slug': ('name', )}
     
-admin.site.register(Speaker, SpeakerAdmin )
-admin.site.register(Talk, TalkAdmin )
+admin.site.register(Speaker, SpeakerAdmin)
 
